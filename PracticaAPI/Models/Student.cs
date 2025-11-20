@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace PracticaAPI.Models;
 
 public class Student
-{
+{   
+    [Key]
     public int IdStudent { get; set; }
     public int GradeId { get; set; }
     public string FirstName { get; set; }

@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace PracticaAPI.Models;
 
 public class Enrollment
-{
+{   
+    [Key]
     public int IdEnrollment { get; set; }
     public int StudentId { get; set; }
     public int CourseId { get; set; }
