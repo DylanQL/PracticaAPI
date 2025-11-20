@@ -2,8 +2,12 @@ namespace PracticaAPI.Models;
 
 public class Enrollment
 {
-    public int idEnrollment { get; set; }
-    public int Student_idStudent { get; set; }
-    public int Course_idCourse { get; set; }
+    public int IdEnrollment { get; set; }
+    public int StudentId { get; set; }
+    public int CourseId { get; set; }
     public DateTime Date { get; set; }
+    
+    //Navigation Properties
+    public Student Student { get; set; }
+    public Course Course { get; set; }
 }
